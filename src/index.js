@@ -48,7 +48,7 @@ class Client {
     agentOptions,
     headers = false,
     host = 'localhost',
-    logger = debugnyan('ecc-js'),
+    logger = debugnyan('eccoin-js'),
     network = 'mainnet',
     password,
     port,
@@ -78,7 +78,7 @@ class Client {
     let unsupported = [];
 
     if (version) {
-      // Capture X.Y.Z when X.Y.Z.A is passed to support oddly formatted ecc-js
+      // Capture X.Y.Z when X.Y.Z.A is passed to support oddly formatted eccoin-js
       // versions such as 0.15.0.1.
       const result = /[0-9]+\.[0-9]+\.[0-9]+/.exec(version);
 
@@ -281,7 +281,7 @@ _.forOwn(methods, (range, method) => {
 export default Client;
 
 /**
- * Export Client class (CJS) for compatibility with require('ecc-js').
+ * Export Client class (CJS) for compatibility with require('eccoin-js').
  */
 
 module.exports = Client;

@@ -101,6 +101,12 @@ var _default = {
   generateToAddress: {
     version: '>=0.13.0'
   },
+  getANSAddress: {
+    version: '>=0.0.1'
+  },
+  getANSRecord: {
+    version: '>=0.0.1'
+  },
   getAccount: {
     version: '>=0.1.0'
   },
@@ -112,12 +118,6 @@ var _default = {
   },
   getAddressesByAccount: {
     version: '>=0.1.0'
-  },
-  getANSAddress: {
-    version: '>=0.0.1'
-  },
-  getANSRecord: {
-    version: '>=0.0.1'
   },
   getBalance: {
     version: '>=0.3.18'

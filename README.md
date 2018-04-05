@@ -1,4 +1,4 @@
-# ecc-js
+# eccoin-js
 A modern ECC REST and RPC client to execute administrative tasks, wallet operations and queries about network and the blockchain.
 
 ## Status
@@ -8,7 +8,7 @@ A modern ECC REST and RPC client to execute administrative tasks, wallet operati
 Install the package via `npm`:
 
 ```sh
-npm install ecc-js --save
+npm install eccoin-js --save
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ npm install ecc-js --save
 1. `[agentOptions]` _(Object)_: Optional `agent` [options](https://github.com/request/request#using-optionsagentoptions) to configure SSL/TLS.
 2. `[headers=false]` _(boolean)_: Whether to return the response headers.
 3. `[host=localhost]` _(string)_: The host to connect to.
-4. `[logger=debugnyan('ecc-js')]` _(Function)_: Custom logger (by default, `debugnyan`).
+4. `[logger=debugnyan('eccoin-js')]` _(Function)_: Custom logger (by default, `debugnyan`).
 5. `[network=mainnet]` _(string)_: The network
 6. `[password]` _(string)_: The RPC server user password.
 7. `[port=[network]]` _(string)_: The RPC server port.
@@ -33,7 +33,7 @@ npm install ecc-js --save
 The `network` will automatically determine the port to connect to, just like the `eccoind` and `eccoin-cli` commands.
 
 ```js
-const Client = require('ecc-js');
+const Client = require('eccoin-js');
 const client = new Client({ network: 'regtest' });
 ```
 
@@ -155,7 +155,7 @@ To avoid potential issues with prototype references, all methods are still enume
 Start the `eccoind` with the RPC server enabled and optionally configure a username and password:
 
 ```sh
-docker run --rm -it ruimarinho/ecc-js:0.12-alpine -printtoconsole -rpcuser=foo -rpcpassword=bar -server
+docker run --rm -it ruimarinho/eccoin-js:0.12-alpine -printtoconsole -rpcuser=foo -rpcpassword=bar -server
 ```
 
 These configuration values may also be set on the `eccoin.conf` file of your platform installation.
@@ -212,7 +212,7 @@ Error handling is still fragile so avoid passing user input.
 Start the `eccoind` with the REST server enabled:
 
 ```sh
-docker run --rm -it ruimarinho/ecc-js:0.12-alpine -printtoconsole -server -rest
+docker run --rm -it ruimarinho/eccoin-js:0.12-alpine -printtoconsole -server -rest
 ```
 
 These configuration values may also be set on the `eccoin.conf` file of your platform installation. Use `txindex=1` if you'd like to enable full transaction query support (note: this will take a considerable amount of time on the first run).
@@ -352,7 +352,7 @@ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 3650 -nod
 On ECC <0.12, you can start the `eccoind` RPC server directly with SSL:
 
 ```sh
-docker run --rm -it -v $(PWD)/ssl:/etc/ssl ruimarinho/ecc-js:0.11-alpine -printtoconsole -rpcuser=foo -rpcpassword=bar -rpcssl -rpcsslcertificatechainfile=/etc/ssl/eccoind/cert.pem -rpcsslprivatekeyfile=/etc/ssl/eccoind/key.pem -server
+docker run --rm -it -v $(PWD)/ssl:/etc/ssl ruimarinho/eccoin-js:0.11-alpine -printtoconsole -rpcuser=foo -rpcpassword=bar -rpcssl -rpcsslcertificatechainfile=/etc/ssl/eccoind/cert.pem -rpcsslprivatekeyfile=/etc/ssl/eccoind/key.pem -server
 ```
 
 On ECC >0.12, use must use `stunnel` (`brew install stunnel` or `sudo apt-get install stunnel4`) or an HTTPS reverse proxy to configure SSL since the built-in support for SSL has been removed. The trade off with `stunnel` is performance and simplicity versus features, as it lacks more powerful capacities such as Basic Authentication and caching which are standard in reverse proxies.
@@ -378,7 +378,7 @@ stunnel -d 28332 -r 127.0.0.1:30001 -p stunnel.pem -P ''
 Then pass the public certificate to the client:
 
 ```js
-const Client = require('ecc-js');
+const Client = require('eccoin-js');
 const fs = require('fs');
 const client = new Client({
   agentOptions: {
@@ -391,13 +391,13 @@ const client = new Client({
 
 ## Logging
 
-By default, all requests made with `ecc-js` are logged using [uphold/debugnyan](https://github.com/uphold/debugnyan) with `ecc-js` as the logging namespace.
+By default, all requests made with `eccoin-js` are logged using [uphold/debugnyan](https://github.com/uphold/debugnyan) with `eccoin-js` as the logging namespace.
 
 Please note that all sensitive data is obfuscated before calling the logger.
 
 #### Example
 
-Example output defining the environment variable `DEBUG=ecc-js`:
+Example output defining the environment variable `DEBUG=eccoin-js`:
 
 ```javascript
 const client = new Client();
@@ -405,7 +405,7 @@ const client = new Client();
 client.getTransactionByHash('b4dd08f32be15d96b7166fd77afd18aece7480f72af6c9c7f9c5cbeb01e686fe');
 
 // {
-//   "name": "ecc-js",
+//   "name": "eccoin-js",
 //   "hostname": "localhost",
 //   "pid": 57908,
 //   "level": 20,
@@ -454,7 +454,7 @@ npm version [<newversion> | major | minor | patch] -m "Release %s"
 ## License
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/ecc-js.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/ecc-js
-[travis-image]: https://img.shields.io/travis/ruimarinho/ecc-js.svg?style=flat-square
-[travis-url]: https://travis-ci.org/ruimarinho/ecc-js
+[npm-image]: https://img.shields.io/npm/v/eccoin-js.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/eccoin-js
+[travis-image]: https://img.shields.io/travis/ruimarinho/eccoin-js.svg?style=flat-square
+[travis-url]: https://travis-ci.org/ruimarinho/eccoin-js
