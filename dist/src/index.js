@@ -48,9 +48,9 @@ function source(...args) {
 
 
 const networks = {
-  mainnet: 8332,
-  regtest: 18332,
-  testnet: 18332
+  mainnet: 19119,
+  regtest: 30001,
+  testnet: 30001
 };
 /**
  * Constructor.
@@ -61,7 +61,7 @@ class Client {
     agentOptions,
     headers = false,
     host = 'localhost',
-    logger = (0, _debugnyan.default)('bitcoin-core'),
+    logger = (0, _debugnyan.default)('ecc-js'),
     network = 'mainnet',
     password,
     port,
@@ -95,7 +95,7 @@ class Client {
     let unsupported = [];
 
     if (version) {
-      // Capture X.Y.Z when X.Y.Z.A is passed to support oddly formatted Bitcoin Core
+      // Capture X.Y.Z when X.Y.Z.A is passed to support oddly formatted ecc-js
       // versions such as 0.15.0.1.
       const result = /[0-9]+\.[0-9]+\.[0-9]+/.exec(version);
 
@@ -299,7 +299,7 @@ _lodash.default.forOwn(_methods.default, (range, method) => {
 
 var _default = Client;
 /**
- * Export Client class (CJS) for compatibility with require('bitcoin-core').
+ * Export Client class (CJS) for compatibility with require('ecc-js').
  */
 
 exports.default = _default;

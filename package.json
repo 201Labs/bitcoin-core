@@ -1,26 +1,28 @@
 {
-  "name": "bitcoin-core",
-  "version": "2.0.0",
-  "description": "A modern Bitcoin Core REST and RPC client.",
+  "name": "ecc-js",
+  "version": "1.0.0",
+  "description": "A modern ECC REST and RPC client.",
   "keywords": [
     "bitcoin",
     "bitcoind",
+    "ecc",
+    "eccoind",
     "client",
     "request",
     "rest",
     "rpc"
   ],
-  "homepage": "https://github.com/ruimarinho/bitcoin-core",
-  "bugs": "https://github.com/ruimarinho/bitcoin-core/issues",
+  "homepage": "https://github.com/201labs/ecc-js",
+  "bugs": "https://github.com/201labs/ecc-js/issues",
   "license": "MIT",
   "author": {
-    "name": "Rui Marinho",
-    "email": "ruipmarinho@gmail.com"
+    "name": "Devin Young",
+    "email": "devin@201labs.com"
   },
   "main": "dist/src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruimarinho/bitcoin-core.git"
+    "url": "https://github.com/201labs/ecc-js.git"
   },
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
