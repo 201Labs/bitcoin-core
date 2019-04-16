@@ -278,6 +278,9 @@ var _default = {
   listAddressGroupings: {
     version: '>=0.7.0'
   },
+  listAddresses: {
+    version: '>=0.1.0'
+  },
   listBanned: {
     version: '>=0.12.0'
   },

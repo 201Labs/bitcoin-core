@@ -120,6 +120,7 @@ export default {
   keypoolRefill: { version: '>=0.1.0' },
   listAccounts: { version: '>=0.1.0' },
   listAddressGroupings: { version: '>=0.7.0' },
+  listAddresses: { version: '>=0.1.0' },
   listBanned: { version: '>=0.12.0' },
   listLockUnspent: { version: '>=0.8.0' },
   listReceivedByAccount: { version: '>=0.1.0' },
