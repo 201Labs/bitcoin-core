@@ -1,6 +1,6 @@
 {
   "name": "eccoin-js",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "A modern ECC REST and RPC client.",
   "keywords": [
     "bitcoin",
@@ -12,8 +12,8 @@
     "rest",
     "rpc"
   ],
-  "homepage": "https://github.com/201labs/eccoin-js",
-  "bugs": "https://github.com/201labs/eccoin-js/issues",
+  "homepage": "https://github.com/project-ecc/eccoin-js",
+  "bugs": "https://github.com/project-ecc/eccoin-js/issues",
   "license": "MIT",
   "author": {
     "name": "Devin Young",
@@ -22,7 +22,7 @@
   "main": "dist/src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/201labs/eccoin-js.git"
+    "url": "https://github.com/project-ecc/eccoin-js.git"
   },
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",

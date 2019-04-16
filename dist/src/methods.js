@@ -158,6 +158,9 @@ var _default = {
   getGenerate: {
     version: '<0.13.0'
   },
+  getGeneratepos: {
+    version: '<0.13.0'
+  },
   getHashesPerSec: {
     version: '<0.10.0'
   },
@@ -342,6 +345,9 @@ var _default = {
     version: '>=0.12.0'
   },
   setGenerate: {
+    version: '<0.13.0'
+  },
+  setGeneratepos: {
     version: '<0.13.0'
   },
   setNetworkActive: {
