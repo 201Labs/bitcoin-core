@@ -101,6 +101,7 @@ export default {
   getWork: { version: '<0.10.0' },
   help: { version: '>=0.1.0' },
   haveroute: { version: '>=0.1.0' },
+  invalidateBlock: { version: '>=0.1.0' },
   importAddress: { version: '>=0.10.0' },
   importMulti: {
     obfuscate: {
@@ -144,6 +145,7 @@ export default {
   reloadConfig: { version: '>=0.0.1' },
   removePrunedFunds: { version: '>=0.13.0' },
   readlastpacket: { version: '>=0.1.0' },
+  reconsiderBlock: { version: '>=0.1.0' },
   sendFrom: { version: '>=0.3.18' },
   sendMany: { version: '>=0.3.21' },
   sendpacket: { version: '>=0.1.0' },
