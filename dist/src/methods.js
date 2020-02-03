@@ -236,6 +236,15 @@ var _default = {
   getWork: {
     version: '<0.10.0'
   },
+  getbuffer: {
+    version: '>=0.5.0'
+  },
+  getroutingpubkey: {
+    version: '>=0.5.0'
+  },
+  getzmqnotification: {
+    version: '>=0.5.0'
+  },
   help: {
     version: '>=0.1.0'
   },
@@ -341,6 +350,9 @@ var _default = {
   sendToAddress: {
     version: '>=0.1.0'
   },
+  sendpacket: {
+    version: '>=0.5.0'
+  },
   setAccount: {
     version: '>=0.1.0'
   },
@@ -384,6 +396,12 @@ var _default = {
     version: '>=0.1.0'
   },
   submitBlock: {
+    version: '>=0.7.0'
+  },
+  tagsignmessage: {
+    version: '>=0.7.0'
+  },
+  tagverifymessage: {
     version: '>=0.7.0'
   },
   upTime: {
