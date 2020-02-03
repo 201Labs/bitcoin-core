@@ -92,6 +92,9 @@ var _default = {
   estimateSmartPriority: {
     version: '>=0.12.0 <0.15.0'
   },
+  findRoute: {
+    version: '>=0.1.0'
+  },
   fundRawTransaction: {
     version: '>=0.12.0'
   },
@@ -239,11 +242,23 @@ var _default = {
   getbuffer: {
     version: '>=0.5.0'
   },
-  getroutingpubkey: {
-    version: '>=0.5.0'
-  },
   getzmqnotification: {
     version: '>=0.5.0'
+  },
+  getaodvidentry: {
+    version: '>=0.0.1'
+  },
+  getaodvkeyentry: {
+    version: '>=0.0.1'
+  },
+  getaodvtable: {
+    version: '>=0.0.1'
+  },
+  getroutingpubkey: {
+    version: '>=0.0.1'
+  },
+  haveroute: {
+    version: '>=0.1.0'
   },
   help: {
     version: '>=0.1.0'
@@ -277,6 +292,9 @@ var _default = {
   },
   importWallet: {
     version: '>=0.9.0'
+  },
+  invalidateBlock: {
+    version: '>=0.1.0'
   },
   keypoolRefill: {
     version: '>=0.1.0'
@@ -331,6 +349,9 @@ var _default = {
   },
   pruneBlockchain: {
     version: '>=0.14.0'
+  },
+  reconsiderBlock: {
+    version: '>=0.1.0'
   },
   reloadConfig: {
     version: '>=0.0.1'
