@@ -98,10 +98,10 @@ export default {
   getaodvidentry: { version: '>=0.0.1' },
   getaodvkeyentry: { version: '>=0.0.1' },
   getaodvtable: { version: '>=0.0.1' },
-  haveroute: { version: '>=0.1.0' },
   getbuffer: { version: '>=0.5.0' },
   getroutingpubkey: { version: '>=0.5.0' },
   getzmqnotification: { version: '>=0.5.0' },
+  haveroute: { version: '>=0.1.0' },
   help: { version: '>=0.1.0' },
   importAddress: { version: '>=0.10.0' },
   importMulti: {

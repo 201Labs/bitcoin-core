@@ -239,12 +239,6 @@ var _default = {
   getWork: {
     version: '<0.10.0'
   },
-  getbuffer: {
-    version: '>=0.5.0'
-  },
-  getzmqnotification: {
-    version: '>=0.5.0'
-  },
   getaodvidentry: {
     version: '>=0.0.1'
   },
@@ -254,8 +248,14 @@ var _default = {
   getaodvtable: {
     version: '>=0.0.1'
   },
+  getbuffer: {
+    version: '>=0.5.0'
+  },
   getroutingpubkey: {
-    version: '>=0.0.1'
+    version: '>=0.5.0'
+  },
+  getzmqnotification: {
+    version: '>=0.5.0'
   },
   haveroute: {
     version: '>=0.1.0'
