@@ -248,8 +248,14 @@ var _default = {
   getaodvtable: {
     version: '>=0.0.1'
   },
+  getbuffer: {
+    version: '>=0.5.0'
+  },
   getroutingpubkey: {
-    version: '>=0.0.1'
+    version: '>=0.5.0'
+  },
+  getzmqnotification: {
+    version: '>=0.5.0'
   },
   haveroute: {
     version: '>=0.1.0'
@@ -344,9 +350,6 @@ var _default = {
   pruneBlockchain: {
     version: '>=0.14.0'
   },
-  readlastpacket: {
-    version: '>=0.1.0'
-  },
   reconsiderBlock: {
     version: '>=0.1.0'
   },
@@ -369,7 +372,7 @@ var _default = {
     version: '>=0.1.0'
   },
   sendpacket: {
-    version: '>=0.1.0'
+    version: '>=0.5.0'
   },
   setAccount: {
     version: '>=0.1.0'
@@ -414,6 +417,12 @@ var _default = {
     version: '>=0.1.0'
   },
   submitBlock: {
+    version: '>=0.7.0'
+  },
+  tagsignmessage: {
+    version: '>=0.7.0'
+  },
+  tagverifymessage: {
     version: '>=0.7.0'
   },
   upTime: {
